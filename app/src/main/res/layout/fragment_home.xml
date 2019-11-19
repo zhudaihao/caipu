@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/bga_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:overScrollMode="never" />
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+        <ImageView
+            android:id="@+id/iv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp10"
+            android:src="@mipmap/classify" />
+
+        <Button
+            android:id="@+id/tv_search"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_class"
+            android:background="@drawable/hot_shape"
+            android:drawableLeft="@mipmap/sousuo"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="热门食材,菜谱"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_news"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_search"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="@dimen/dp20"
+            android:src="@mipmap/infor" />
+    </RelativeLayout>
+
+    <include layout="@layout/error_view" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

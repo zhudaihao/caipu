@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:orientation="vertical">
+
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/bga_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--  高设置包裹不显示上拉加载图标  android:layout_width="match_parent"
+            android:layout_height="wrap_content"-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadingEdge="none" />
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+
+    <include layout="@layout/error_view" />
+</com.zhy.autolayout.AutoRelativeLayout>

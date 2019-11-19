@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_layout_tag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:background="@color/line" />
+
+        <RadioButton
+            android:id="@+id/rb_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/collect_icon"
+            android:drawablePadding="10dp"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:text="收藏"
+            android:textColor="@color/selector_details_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_works"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/works_icon"
+            android:drawablePadding="10dp"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:text="上传作品"
+            android:textColor="@color/selector_details_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/share_icon"
+            android:drawablePadding="10dp"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="45dp"
+            android:text="分享"
+            android:textColor="@color/selector_details_color"
+            android:textSize="14sp" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/bga_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_layout_tag">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:overScrollMode="never" />
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <View
+        android:id="@+id/view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:paddingBottom="@dimen/dp15"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp40"
+        android:paddingTop="15dp"
+        android:src="@mipmap/back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="可口法式"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/base_title_text"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_inform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingLeft="@dimen/dp40"
+        android:paddingRight="@dimen/dp20"
+        android:paddingTop="10dp"
+        android:src="@mipmap/inform"
+        android:visibility="visible" />
+
+    <include layout="@layout/error_view" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

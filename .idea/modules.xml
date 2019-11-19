@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication5.iml" filepath="$PROJECT_DIR$/MyApplication5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TickViewlibrary/TickViewlibrary.iml" filepath="$PROJECT_DIR$/TickViewlibrary/TickViewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bannerlibrary/bannerlibrary.iml" filepath="$PROJECT_DIR$/bannerlibrary/bannerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularanim/circularanim.iml" filepath="$PROJECT_DIR$/circularanim/circularanim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/keyboarLibrary/keyboarLibrary.iml" filepath="$PROJECT_DIR$/keyboarLibrary/keyboarLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_dialog/library_dialog.iml" filepath="$PROJECT_DIR$/library_dialog/library_dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_update/library_update.iml" filepath="$PROJECT_DIR$/library_update/library_update.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lockpattern/lockpattern.iml" filepath="$PROJECT_DIR$/lockpattern/lockpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photogallery/photogallery.iml" filepath="$PROJECT_DIR$/photogallery/photogallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picturelibrary/picturelibrary.iml" filepath="$PROJECT_DIR$/picturelibrary/picturelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progresslibrary/progresslibrary.iml" filepath="$PROJECT_DIR$/progresslibrary/progresslibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagertextlibrary/viewpagertextlibrary.iml" filepath="$PROJECT_DIR$/viewpagertextlibrary/viewpagertextlibrary.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp20"
+    android:paddingRight="@dimen/dp20"
+    android:paddingTop="@dimen/dp15">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="115dp"
+        android:layout_height="85dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/banner" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="23dp"
+        android:layout_toLeftOf="@id/iv_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="素食主义素食主义素食主义素食主义素食主义素食主义素食主义素食主义素食主义"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp16" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:singleLine="true"
+        android:text="考拉"
+        android:textColor="@color/color_ad"
+        android:textSize="@dimen/sp14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line"
+        android:paddingLeft="@dimen/dp20" />
+
+</RelativeLayout>

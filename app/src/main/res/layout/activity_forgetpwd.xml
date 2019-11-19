@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px32"
+        android:paddingRight="@dimen/px32">
+
+        <TextView
+            android:id="@+id/iv_phone_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="手机号"
+            android:textColor="@color/color_b4"
+            android:textSize="@dimen/sp14" />
+
+        <RadioButton
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px100"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/color_2c"
+            android:textSize="@dimen/sp14" />
+
+        <View
+            android:id="@+id/line_tag"
+            android:layout_width="@dimen/px1"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_toLeftOf="@id/tv_code"
+            android:background="@color/color_00" />
+
+        <ImageView
+            android:id="@+id/image_delete_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_marginRight="@dimen/px10"
+            android:layout_toLeftOf="@id/line_tag"
+            android:src="@mipmap/edit_clear"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/EditText_register_style"
+            android:layout_toLeftOf="@id/image_delete_1"
+            android:layout_toRightOf="@id/iv_phone_tag"
+            android:hint="输入手机号码" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px1"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px32"
+        android:paddingRight="@dimen/px32">
+
+        <TextView
+            android:id="@+id/iv_code_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="验证码"
+            android:textColor="@color/color_b4"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/iv_delete_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/edit_clear"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/EditText_register_style"
+            android:layout_toLeftOf="@id/iv_delete_2"
+            android:layout_toRightOf="@id/iv_code_tag"
+            android:hint="请输入短信验证码" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px32"
+        android:text="密码由8~20位字母加数字组成"
+        android:textColor="@color/color_87"
+        android:textSize="@dimen/sp14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px32"
+        android:paddingRight="@dimen/px32">
+
+        <TextView
+            android:id="@+id/tv_tag_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="新登录密码"
+            android:textColor="@color/color_b4"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/iv_shown_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/hint_check"
+            android:textColor="@color/color_2c"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/iv_delete_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px32"
+            android:layout_marginRight="@dimen/px32"
+            android:layout_toLeftOf="@+id/iv_shown_3"
+            android:src="@mipmap/edit_clear"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_Password"
+            style="@style/EditText_register_style"
+            android:layout_toLeftOf="@id/iv_delete_3"
+            android:layout_toRightOf="@id/tv_tag_3"
+            android:hint="请输入新密码"
+            android:inputType="textPassword" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px1"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/px32"
+        android:paddingRight="@dimen/px32">
+
+        <TextView
+            android:id="@+id/tv_tag4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="确认新密码"
+            android:textColor="@color/color_b4"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/iv_shown_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/hint_check"
+            android:text="获取验证码"
+            android:textColor="@color/color_2c"
+            android:textSize="@dimen/sp14" />
+
+
+        <ImageView
+            android:id="@+id/iv_delete_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px32"
+            android:layout_marginRight="@dimen/px32"
+            android:layout_toLeftOf="@+id/iv_shown_4"
+            android:src="@mipmap/edit_clear"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_Confirm_Password"
+            style="@style/EditText_register_style"
+            android:layout_toLeftOf="@+id/iv_delete_4"
+            android:layout_toRightOf="@+id/tv_tag4"
+            android:hint="请再次输入新密码"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_yes"
+        style="@style/button_style"
+        android:layout_margin="@dimen/px30"
+        android:text="确定" />
+</LinearLayout>

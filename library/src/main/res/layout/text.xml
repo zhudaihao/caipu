@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <view.SearchEditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/search_shape"
+        android:drawableLeft="@mipmap/edit_search"
+        android:drawableRight="@mipmap/edit_clear"
+        android:hint="搜索"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="15dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textColor="#555555"
+        android:textColorHint="#b4b4b4"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="14sp"
+        tools:text="11111" />
+    
+
+</LinearLayout>

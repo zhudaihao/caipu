@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp30"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp20"
+    android:paddingRight="@dimen/dp20">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="步骤1"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="将胡萝卜"
+        android:textColor="@color/color_7A" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/banner" />
+
+
+</LinearLayout>

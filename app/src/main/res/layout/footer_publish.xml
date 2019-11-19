@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+
+        <TextView
+            android:id="@+id/tv_add_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="20dp"
+            android:paddingTop="16dp"
+            android:text="增加一行"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+        <TextView
+            android:id="@+id/tv_adjust_ingredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackground"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="20dp"
+            android:paddingTop="16dp"
+            android:text="调整用料"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+
+        <TextView
+            android:id="@+id/tv_add_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="20dp"
+            android:text="增加一步"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+        <TextView
+            android:id="@+id/tv_adjust_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackground"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="20dp"
+            android:text="调整步骤"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableRight="@mipmap/me_back"
+        android:gravity="bottom"
+        android:paddingBottom="14dp"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        android:paddingTop="@dimen/dp10"
+        android:text="分类"
+        android:textColor="@color/color_3"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@color/color_fa"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/bt_out"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_shape"
+            android:text="发布这个菜谱"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

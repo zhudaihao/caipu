@@ -1,0 +1,1 @@
+include ':app', ':library', ':pickerview', ':lockpattern', ':circularanim', ':progresslibrary', ':keyboarLibrary', ':library_update', ':TickViewlibrary', ':library_dialog', ':viewpagertextlibrary', ':bannerlibrary', ':picturelibrary', ':photogallery'

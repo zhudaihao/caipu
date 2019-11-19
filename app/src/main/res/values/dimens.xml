@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="home_banner_h">358px</dimen>
+    <dimen name="home_image_two">446px</dimen>
+</resources>

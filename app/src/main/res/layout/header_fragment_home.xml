@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.youth.banner.Banner
+            android:id="@+id/mBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_banner_h"
+            android:background="@mipmap/cs"
+            app:image_scale_type="fit_xy"
+            app:indicator_drawable_selected="@drawable/shape_banner"
+            app:indicator_drawable_unselected="@drawable/shape_un_banner"
+            app:title_textsize="@dimen/sp12" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="菜谱精选"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_cookbook_more"
+            style="@style/home_text_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看更多" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_handpick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_image_two"
+        android:overScrollMode="never" />
+
+
+    <RelativeLayout
+        style="@style/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_everyDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日三餐.早餐"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_everyDay_more"
+            style="@style/home_text_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看更多" />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_everDay"
+        android:layout_width="match_parent"
+        android:layout_height="446px"
+        android:overScrollMode="never" />
+
+    <RelativeLayout
+        style="@style/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="养生专辑"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_health_more"
+            style="@style/home_text_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看更多" />
+
+    </RelativeLayout>
+
+    <cn.zdh.bannerlibrary.BannerLayout
+        android:id="@+id/bannerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:autoPlaying="true"
+        app:centerScale="1.1"
+        app:itemSpace="20"
+        app:moveSpeed="1.8" />
+
+
+    <RelativeLayout
+        style="@style/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门食材"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_hot_more"
+            style="@style/home_text_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看更多" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+
+
+    <RelativeLayout
+        style="@style/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能推荐"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp11"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp20"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingTop="@dimen/dp20">
+
+            <EditText
+                android:id="@+id/et_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:background="@null"
+                android:hint="记录美食的点滴..."
+                android:maxLength="300"
+                android:textColorHint="#E0E0E0"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="菜谱关联"
+                android:textColor="@color/color_3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="糯米菜丸子"
+                android:textColor="@color/color_7A"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="菜谱评分"
+            android:textColor="@color/color_3"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/dp20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="步骤清晰"
+                android:textColor="@color/color_7A"
+                android:textSize="16sp" />
+
+            <gxyclub.view.RatingBar
+                android:id="@+id/step_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                app:starCount="5"
+                app:starEmpty="@drawable/rating_small_empty"
+                app:starFill="@drawable/rating_small_full"
+                app:starHalf="@drawable/rating_small_half"
+                app:starImageSize="22dp"
+                app:starPadding="10dp"
+                app:starStep="5"
+                app:stepSize="Full" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="非常好"
+                android:textColor="@color/color_7A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/dp20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="图片完整"
+                android:textColor="@color/color_7A"
+                android:textSize="16sp" />
+
+            <gxyclub.view.RatingBar
+                android:id="@+id/image_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                app:starCount="5"
+                app:starEmpty="@drawable/rating_small_empty"
+                app:starFill="@drawable/rating_small_full"
+                app:starHalf="@drawable/rating_small_half"
+                app:starImageSize="22dp"
+                app:starPadding="10dp"
+                app:starStep="4"
+                app:stepSize="Full" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="好"
+                android:textColor="@color/color_7A"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/dp20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="简单易懂"
+                android:textColor="@color/color_7A"
+                android:textSize="16sp" />
+
+            <gxyclub.view.RatingBar
+                android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                app:starCount="5"
+                app:starEmpty="@drawable/rating_small_empty"
+                app:starFill="@drawable/rating_small_full"
+                app:starHalf="@drawable/rating_small_half"
+                app:starImageSize="22dp"
+                app:starPadding="10dp"
+                app:starStep="3"
+                app:stepSize="Full" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="一般"
+                android:textColor="@color/color_7A"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

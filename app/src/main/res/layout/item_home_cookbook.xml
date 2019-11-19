@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dp15"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/dp6"
+    app:cardElevation="@dimen/elevation">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="270dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/cs" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="精选"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp6"
+                android:paddingLeft="@dimen/dp6"
+                android:paddingRight="@dimen/dp6"
+                android:paddingTop="@dimen/dp6"
+                android:src="@mipmap/collect" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/image_top" />
+
+            <gxyclub.view.RatingBar
+                android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/tv_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="26dp"
+                app:starCount="5"
+                app:starEmpty="@drawable/rating_small_empty"
+                app:starFill="@drawable/rating_small_full"
+                app:starHalf="@drawable/rating_small_half"
+                app:starImageSize="16dp"
+                app:starPadding="1dp"
+                app:starStep="3"
+                app:stepSize="Half" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cookbook_bottom_shape"
+            android:paddingBottom="@dimen/dp15">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp15"
+                android:singleLine="true"
+                android:text="可口法式草莓" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/tv_name"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp11"
+                android:src="@mipmap/icon" />
+
+
+            <TextView
+                android:id="@+id/tv_icon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginLeft="@dimen/dp6"
+                android:layout_marginTop="@dimen/dp14"
+                android:layout_toRightOf="@id/iv_icon"
+                android:text="私厨"
+                android:textColor="@color/cookbook_text"
+                android:textSize="@dimen/sp12" />
+
+
+            <TextView
+                android:id="@+id/tv_praise"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_name"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp12"
+                android:singleLine="true"
+                android:text="123456"
+                android:textColor="@color/praise_text"
+                android:textSize="@dimen/sp12" />
+
+
+            <ImageView
+                android:id="@+id/iv_praise_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_toLeftOf="@id/tv_praise"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp14"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp5"
+                android:paddingTop="@dimen/dp14"
+                android:src="@mipmap/like" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

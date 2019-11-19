@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp20"
+    android:background="@android:color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="17dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_view"
+        android:layout_width="57dp"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="22"
+            android:textColor="@color/color_3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp15"
+            android:text="9月/2018"
+            android:textColor="@color/color_3"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_toRightOf="@id/ll_view"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="具有生具有生具有生具有生具有生具有生具有生具有生具有生"
+        android:textColor="@color/color_7A"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

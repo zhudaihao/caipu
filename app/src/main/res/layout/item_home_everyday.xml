@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="7dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/radius"
+        app:cardElevation="@dimen/elevation">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_image_l"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/cs" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cookbook_bottom_shape"
+                android:paddingBottom="@dimen/dp15">
+
+                <TextView
+                    android:id="@+id/tv_name_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:singleLine="true"
+                    android:text="可口法式草莓" />
+
+                <ImageView
+                    android:id="@+id/iv_icon_l"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_name_l"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:src="@mipmap/icon" />
+
+
+                <TextView
+                    android:id="@+id/tv_icon_name_l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name_l"
+                    android:layout_marginLeft="@dimen/dp6"
+                    android:layout_marginTop="@dimen/dp14"
+                    android:layout_toRightOf="@id/iv_icon_l"
+                    android:text="私厨"
+                    android:textColor="@color/cookbook_text"
+                    android:textSize="@dimen/sp12" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/radius"
+        app:cardElevation="@dimen/elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_image_r"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/cs" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cookbook_bottom_shape"
+                android:paddingBottom="@dimen/dp15">
+
+                <TextView
+                    android:id="@+id/tv_name_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:singleLine="true"
+                    android:text="可口法式草莓" />
+
+                <ImageView
+                    android:id="@+id/iv_icon_r"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_name_r"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:src="@mipmap/icon" />
+
+
+                <TextView
+                    android:id="@+id/tv_icon_name_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name_r"
+                    android:layout_marginLeft="@dimen/dp6"
+                    android:layout_marginTop="@dimen/dp14"
+                    android:layout_toRightOf="@id/iv_icon_r"
+                    android:text="私厨"
+                    android:textColor="@color/cookbook_text"
+                    android:textSize="@dimen/sp12" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.gxyclub">
+
+    <!--权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--打电话权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--存储权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--第三方webView-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    //mob 分享 权限---------
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!--第三方webView-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <!--支付宝支付-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
+    //8.0 APK更新权限
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <!--注册MyApp-->
+    <application
+        android:name="gxyclub.config.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        //屏幕适配 2 注明尺寸
+        <meta-data
+            android:name="design_width"
+            android:value="640" />
+        <meta-data
+            android:name="design_height"
+            android:value="1136" />
+
+        <!--横屏：-->
+        <!--android:screenOrientation="landscape"-->
+        <!--竖屏：-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="stateHidden"-->
+        <activity
+            android:name="gxyclub.ui.activity.welcomeActivity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomeActivityStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="gxyclub.ui.activity.welcomeActivity.GestureLoginActivity"
+            android:label="手势密码登录"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.MainActivity"
+            android:label="主界面"
+            android:launchMode="singleTask" />
+
+
+        <!--支付宝支付-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!--支付宝支付-->
+
+        <activity
+            android:name="gxyclub.ui.activity.loginActivity.LoginActivity"
+            android:label="登录"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.loginActivity.ForgetPwdActivity"
+            android:label="忘记密码"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.loginActivity.RegisterActivity"
+            android:label="注册"
+            android:launchMode="singleTask" />
+
+
+        <activity
+            android:name="gxyclub.ui.activity.loginActivity.UpdatePwdActivity"
+            android:label="修改密码"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.fragment.homeFragment.WebViewActivity"
+            android:launchMode="singleTask" />
+
+
+        <activity
+            android:name="gxyclub.ui.activity.cookBookActivity.CookBookActivity"
+            android:label="菜谱精选更多"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.cookBookActivity.CookBookDetailsActivity"
+            android:label="菜谱详情"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.everyDayActivity.EveryDayActivity"
+            android:label="每日三餐更多"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.healthActivity.HealthDetailsActivity"
+            android:label="养生专辑详情"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.meActivity.EditActivity"
+            android:label="个人中心编辑"
+            android:launchMode="singleTask" />
+
+
+        <activity
+            android:name="gxyclub.ui.activity.meActivity.IntroActivity"
+            android:label="个人中心编辑简介"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.setActivity.SetActivity"
+            android:label="个人中心设置"
+            android:launchMode="singleTask" />
+
+        <!-- ShareSDK的activity -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--注:2：QQ的scheme里面的数字修改为自己QQ注册的ID要和assets的ID一致-->
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent1105783743" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--集成line客户端登录授权，需要添如下格式的过滤器-->
+            <intent-filter>
+                <data android:scheme="line.1477692153" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+        <!-- 填写您从Mob开发者后台中得到的Appkey和AppSecret -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="1d24fdb1b3c58" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="fad1e59fbec47e9bb6b13ea6e0bf01bf" />
+
+
+        <!--微信分享回调 -->
+        <activity
+            android:name="gxyclub.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- ShareSDK的activity -->
+
+        <activity
+            android:name="gxyclub.ui.activity.setActivity.BindingActivity"
+            android:label="绑定号码"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.setActivity.SetPassWordActivity"
+            android:label="设置密码"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.setActivity.IdeaActivity"
+            android:label="反馈"
+            android:launchMode="singleTask" />
+
+
+        <activity
+            android:name="gxyclub.ui.activity.cookBookActivity.LeaveActivity"
+            android:label="留言"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="gxyclub.ui.activity.cookBookActivity.EditLeaveActivity"
+            android:label="编辑留言"
+            android:launchMode="singleTask" />
+
+
+        <activity
+            android:name="gxyclub.ui.activity.cookBookActivity.WorksActivity"
+            android:label="上传作品"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="gxyclub.ui.fragment.homeFragment.MoreActivity"
+            android:label="消息"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="gxyclub.ui.fragment.homeFragment.MoreSystemActivity"
+            android:label="系统消息"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="gxyclub.ui.fragment.homeFragment.MoreCollectActivity"
+            android:label="收藏"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="gxyclub.ui.fragment.homeFragment.MoreRemarkActivity"
+            android:label="评论"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="gxyclub.ui.fragment.homeFragment.MoreLikeActivity"
+            android:label="点赞"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="gxyclub.ui.fragment.homeFragment.HotMoreActivity"
+            android:label="热门搜索更多"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="gxyclub.ui.activity.capacityActivity.CapacityMoreActivity"
+            android:label="智能推荐更多"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name="gxyclub.ui.fragment.publishFragment.PublishActivity"
+            android:label="发布"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name="gxyclub.ui.fragment.homeFragment.HotDetailsActivity"
+            android:label="热门详情"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name="gxyclub.ui.fragment.homeFragment.SearchActivity"
+            android:label="搜索"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name="gxyclub.ui.activity.cookBookActivity.ImageActivity"
+            android:label="图片浏览"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="gxyclub.ui.activity.healthActivity.HealthActivity"
+            android:label="养生专辑 更多"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+    </application>
+
+
+</manifest>

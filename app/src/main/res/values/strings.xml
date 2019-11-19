@@ -1,0 +1,60 @@
+<resources  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
+    <string name="app_name" translatable="false">共信赢金服</string>
+
+    <string name="tian" translatable="false">天</string>
+    <string name="shi" translatable="false">时</string>
+    <string name="fen" translatable="false">分</string>
+    <string name="miao" translatable="false">秒</string>
+
+    <string name="ladingText" translatable="false">加载中</string>
+
+    <string name="pay_result_callback_msg" formatted="false" translatable="false">支付失败：%s</string>
+
+    <string name="task" translatable="false">每日任务</string>
+    <string name="guess" translatable="false">我的竞猜</string>
+    <string name="record" translatable="false">虚拟币记录</string>
+    <string name="convert" translatable="false">兑换中心</string>
+    <string name="address" translatable="false">收货地址</string>
+    <string name="setting" translatable="false">设置</string>
+
+
+
+    <string name="gesture_forget_gesture" translatable="false">使用账号登录</string>
+    <string name="gesture_default" translatable="false">请输入手势密码</string>
+    <string name="gesture_error" translatable="false">手势密码输入错误</string>
+    <string name="shoushimimacuowuwuci" translatable="false">手势密码已错误5次，您可以使用账户登录后重新设置手势密码</string>
+    <string name="ninyijingshucuo" translatable="false">手势密码错误，您还可以绘制</string>
+    <string name="ci" translatable="false">次</string>
+
+
+    <string name="create_gesture_default" translatable="false">绘制解锁图案</string>
+    <string name="create_gesture_correct" translatable="false">再次绘制解锁图案</string>
+    <string name="create_gesture_less_error" translatable="false">至少连接4个点，请重新输入</string>
+    <string name="create_gesture_confirm_error" translatable="false">与上一次绘制不一致，请重新绘制</string>
+    <string name="create_gesture_confirm_correct" translatable="false">设置成功</string>
+    <string name="create_gesture_reset" translatable="false">重新设置</string>
+    <string name="gesture_correct" translatable="false">输入正确</string>
+
+
+    <string name="hot_content" translatable="false">1，看颜色。不同颜色的西红柿具有不同的保健功效，
+如红色浓重的，富含番茄红素，对预防癌症很有好处
+橙色的西红柿，番茄红素含量少，但胡萝卜素含量高
+一些。粉红色的西红柿，含有少量番茄红素，胡萝卜
+素也较少。浅黄色的西红柿，含少量胡萝卜素，不含
+番茄红素。当西红柿成熟时，色泽会由青变红。特别
+提醒：未成熟的发青的西红柿尽量不要生吃。因为未
+成熟的青西红柿中含有大量的生物碱，可被胃酸水解
+成番茄次碱，多食会出现恶心、呕吐、流涎等中毒症
+状。
+
+2，看果形。美味的西红柿要圆、大、有蒂，硬度适
+宜，富有弹性。扁圆形的果肉薄，正圆形的果肉厚。
+不要购买带长尖或畸形的西红柿，这样的西红柿大多
+是由于过量使用植物生长调节剂造成的。
+
+3，看着色。在选购生吃西红柿时，还需注意不要购
+买着色不匀、花脸的西红柿，因为这很可能是由于西
+红柿病害造成的，味道和营养均很差。</string>
+</resources>

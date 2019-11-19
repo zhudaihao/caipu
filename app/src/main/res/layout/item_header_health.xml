@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F3F3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:paddingTop="15dp"
+        android:text="秋季养生之“食”"
+        android:textColor="#525252"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="22dp"
+        android:text="1、秋季养生以“滋阴润燥”为主，因而在食物方面应
+以“养阴润肺去燥”的食物为宜。
+
+2、根据中医学理论，肺脏对应五色之白色。因此，
+秋季吃些白色食物可起到一定的润肺作用。比如：白
+萝卜、白菜、冬瓜、百合、银耳、莲藕、莲子等食物
+在药膳调补中可加入诸如沙参、百合、麦冬、枸杞等
+滋阴润燥之品。"
+        android:textColor="@color/color_7A"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp20"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20">
+
+        <ImageView
+            android:id="@+id/iv_icon_l"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/cs" />
+
+        <ImageView
+            android:id="@+id/iv_icon_r"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/cs"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</LinearLayout>

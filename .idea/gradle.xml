@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/TickViewlibrary" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bannerlibrary" />
+            <option value="$PROJECT_DIR$/circularanim" />
+            <option value="$PROJECT_DIR$/keyboarLibrary" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/library_dialog" />
+            <option value="$PROJECT_DIR$/library_update" />
+            <option value="$PROJECT_DIR$/lockpattern" />
+            <option value="$PROJECT_DIR$/photogallery" />
+            <option value="$PROJECT_DIR$/pickerview" />
+            <option value="$PROJECT_DIR$/picturelibrary" />
+            <option value="$PROJECT_DIR$/progresslibrary" />
+            <option value="$PROJECT_DIR$/viewpagertextlibrary" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

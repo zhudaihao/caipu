@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp20"
+    android:layout_marginRight="@dimen/dp20"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/radius"
+    app:cardElevation="@dimen/elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/cs" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp6"
+                android:paddingLeft="@dimen/dp6"
+                android:paddingRight="@dimen/dp6"
+                android:paddingTop="@dimen/dp6"
+                android:src="@mipmap/collect" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <gxyclub.view.RatingBar
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/tv_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="26dp"
+                    android:paddingBottom="8dp"
+                    app:starCount="5"
+                    app:starEmpty="@drawable/rating_small_empty"
+                    app:starFill="@drawable/rating_small_full"
+                    app:starHalf="@drawable/rating_small_half"
+                    app:starImageSize="16dp"
+                    app:starPadding="1dp"
+                    app:starStep="3"
+                    app:stepSize="Half" />
+
+                <TextView
+                    android:id="@+id/tv_praise"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:paddingBottom="@dimen/dp10"
+                    android:singleLine="true"
+                    android:text="123456"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sp12" />
+
+
+                <ImageView
+                    android:id="@+id/iv_praise_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/tv_content"
+                    android:layout_toLeftOf="@id/tv_praise"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/dp12"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingTop="@dimen/dp12"
+                    android:src="@mipmap/like" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/image_top" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cookbook_bottom_shape"
+            android:paddingBottom="@dimen/dp15"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp14"
+            android:paddingTop="@dimen/dp15">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="可口法式草莓" />
+
+
+            <TextView
+                android:id="@+id/tv_icon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="6dp"
+                android:text="私厨"
+                android:textColor="@color/cookbook_text"
+                android:textSize="@dimen/sp12" />
+
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/tv_icon_name"
+                android:src="@mipmap/nothing" />
+
+
+            <TextView
+                android:id="@+id/tv_name_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginBottom="@dimen/dp14"
+                android:layout_marginTop="@dimen/dp12"
+                android:maxLines="2"
+                android:textColor="#ADADAD"
+                tools:text="全烫面" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

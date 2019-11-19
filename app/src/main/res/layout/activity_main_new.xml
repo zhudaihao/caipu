@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/back_icon"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/radioStyle"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:tag="0"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_shops"
+            style="@style/radioStyle"
+            android:drawableTop="@drawable/selector_tab_shops"
+            android:tag="1"
+            android:text="出借" />
+
+        <RadioButton
+            android:id="@+id/rb_tag"
+            style="@style/radioStyle"
+            android:layout_marginBottom="@dimen/dp50"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb_guarantee"
+            style="@style/radioStyle"
+            android:drawableTop="@drawable/selector_tab_news"
+            android:tag="3"
+            android:text="担保" />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/radioStyle"
+            android:drawableTop="@drawable/selector_tab_me"
+            android:tag="4"
+            android:text="账户" />
+
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/rb_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:button="@null"
+        android:drawableTop="@drawable/selector_tab_borrow"
+        android:tag="2" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/rg_tab"
+        android:background="@color/color_b4"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/rg_tab"
+        android:layout_toRightOf="@+id/rg_tab" />
+
+</RelativeLayout>

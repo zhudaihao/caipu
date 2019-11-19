@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorProgressGradientStart">#f75acb</color>
+    <color name="colorProgressGradientEnd">#1ae8ff</color>
+
+    <!--<color name="colorProgressGradientStart">#E21918</color>-->
+    <!--<color name="colorProgressGradientEnd">#E21918</color>-->
+</resources>

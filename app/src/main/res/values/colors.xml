@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#FABE19</color>//设置最顶栏背景颜色
+    <color name="colorAccent">#A5A5A5</color>//默认颜色
+    <color name="activity_animation">#eac360</color>//页面切换动画颜色
+
+    <color name="home_banner_circle">#FF7733</color>
+    <color name="home_banner_circle_un">#FFFFFF</color>
+    <color name="cookbook_text">#7A7A7A</color>
+    <color name="praise_text">#525252</color>
+
+    <color name="image_top">#40000000</color>
+    <color name="line">#F0F0F0</color>
+    <color name="back">#FAFAFA</color>
+
+    <color name="tab_un_text">#ADADAD</color>
+    <color name="tab_text">#525252</color>
+
+    <color name="bt_un_pressed">#FABE19</color>
+    <color name="bt_pressed">#e5ae17</color>
+
+    <color name="edit">#E0E0E0</color>
+
+    <color name="details">#FABE19</color>
+    <color name="details_un">#525252</color>
+
+    <color name="color_cc">#CCCCCC</color>
+</resources>

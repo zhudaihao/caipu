@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp20"
+    android:paddingRight="@dimen/dp20">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp">
+
+        <ImageView
+            android:id="@+id/iv_phone_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/phone"
+            android:textColor="@color/color_b4"
+            android:textSize="@dimen/sp14" />
+
+
+        <ImageView
+            android:id="@+id/iv_delete_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:src="@mipmap/edit_clear"
+            android:visibility="invisible" />
+
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/EditText_register_style"
+            android:layout_toLeftOf="@id/iv_delete_1"
+            android:layout_toRightOf="@id/iv_phone_tag"
+            android:hint="请输入手机号"
+            android:textSize="@dimen/sp12" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_code_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/code"
+            android:textColor="@color/color_b4"
+            android:textSize="@dimen/sp14" />
+
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/get_code_shape"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="16dp"
+            android:paddingTop="9dp"
+            android:text="获取验证码"
+            android:textColor="@color/get_code"
+            android:textSize="@dimen/sp12" />
+
+        <ImageView
+            android:id="@+id/iv_delete_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/px30"
+            android:layout_toLeftOf="@id/tv_code"
+            android:src="@mipmap/edit_clear"
+            android:visibility="invisible" />
+
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/EditText_register_style"
+            android:layout_toLeftOf="@id/iv_delete_2"
+            android:layout_toRightOf="@id/iv_code_tag"
+            android:hint="请输入短信验证码"
+            android:textSize="@dimen/sp12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_password_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/password"
+            android:textColor="@color/color_b4"
+            android:textSize="@dimen/sp14" />
+
+
+        <ImageView
+            android:id="@+id/iv_shown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/hint_check" />
+
+        <ImageView
+            android:id="@+id/iv_delete_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/iv_shown"
+            android:src="@mipmap/edit_clear"
+            android:visibility="invisible" />
+
+
+        <EditText
+            android:id="@+id/et_login_pw"
+            style="@style/EditText_register_style"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/iv_delete_3"
+            android:layout_toRightOf="@id/iv_password_tag"
+            android:hint="请输入密码(6-20位数字和字母组合)"
+            android:inputType="textPassword"
+            android:textSize="@dimen/sp12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/line" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="45dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/register_check"
+            android:drawablePadding="10dp"
+            android:text="蛋奶素"
+            android:textColor="@color/color_3" />
+
+        <RadioButton
+            android:id="@+id/rb_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:drawableLeft="@drawable/register_check"
+            android:drawablePadding="10dp"
+            android:text="全素"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/sp14" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_yes"
+        style="@style/button"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="50dp"
+        android:text="立即注册" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp50"
+            android:paddingTop="@dimen/dp10"
+            android:text="注册代表您同意  "
+            android:textColor="@color/color_ad"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingRight="@dimen/dp50"
+            android:paddingTop="@dimen/dp10"
+            android:text="《茹素注册协议》"
+            android:textColor="#FF8D06"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+
+</LinearLayout>

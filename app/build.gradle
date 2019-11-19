@@ -1,0 +1,160 @@
+apply plugin: 'com.android.application'
+/*小刀注解*/
+apply plugin: 'com.jakewharton.butterknife'
+
+//分享
+apply plugin: 'com.mob.sdk'
+MobSDK {
+    appKey "d580ad56b4b5"
+    appSecret "7fcae59a62342e7e2759e9e397c82bdd"
+
+    ShareSDK {
+        //平台配置信息(Z注意SDK版本最低16)
+        devInfo {
+            SinaWeibo {
+                appKey "430840815"
+                appSecret "91a35c15ad42ad5a1dd8605af8b1e8d4"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient false
+            }
+            Wechat {
+                appId "wx694a26d88b7300be"
+                appSecret "944b67c370c1fecc8f9c386f9f0d645b"
+            }
+            QQ {
+                appId "101504972"
+                appKey "94e611bba3ad6ab8ee28b808fafd581c"
+                shareByAppClient true
+            }
+
+        }
+    }
+
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    signingConfigs {
+        debug {
+            storeFile file("D:\\studio  key\\studio  key\\GXY.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
+
+    defaultConfig {
+        applicationId "cn.gxyclub"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "9.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //封装依赖包
+    compile project(':library')
+
+    //小刀注解
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    //手势密码登录
+    compile project(':lockpattern')
+
+    //时间,城市 选择
+    compile project(':pickerview')
+
+    //搜索框
+    compile 'com.wenwenwen888:searchedittext:1.0.0'
+
+    //dialog对话框
+    compile 'com.mylhyl:circleDialog:2.1.6'
+
+    //轮播框架
+    compile 'com.youth.banner:banner:1.4.9'
+
+    //对话框
+    compile 'com.xander.panel:xanderpanel:1.3.1'
+
+    //mob分享
+    compile files('libs/MobCommons-2017.0914.1125.jar')
+    compile files('libs/MobTools-2017.0914.1125.jar')
+    compile files('libs/ShareSDK-Core-3.1.0.jar')
+    compile files('libs/ShareSDK-QQ-3.1.0.jar')
+    compile files('libs/ShareSDK-QZone-3.1.0.jar')
+    compile files('libs/ShareSDK-SinaWeibo-3.1.0.jar')
+    compile files('libs/ShareSDK-Wechat-3.1.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.1.0.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-3.1.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.1.0.jar')
+
+    //指示器
+    compile 'com.longsh:PagerSlidingTabStrip:1.0.0'
+    compile files('libs/alipaySdk-20170922.jar')
+    compile files('libs/libammsdk.jar')
+
+    //上下滚动字体
+    compile 'com.github.paradoxie:AutoVerticalTextview:0.1'
+
+    //更新
+    compile project(':library_update')
+
+    //banner图
+    compile project(':bannerlibrary')
+
+    //阴影；圆角效果
+    compile 'com.android.support:cardview-v7:27.0.0'
+
+    //    compile 'com.android.support:cardview-v7:26.1.0'
+
+    //获取相册 相机图片
+    compile project(':picturelibrary')
+
+    // 注意：统计SDK必须依赖基础组件库。所以需要加入对应依赖:
+    compile 'com.umeng.sdk:common:latest.integration'
+    compile 'com.umeng.sdk:analytics:latest.integration'
+
+    //多选照片
+    compile project(':photogallery')
+
+    //图片缩放
+    compile 'com.bm.photoview:library:1.4.1'
+
+    //apk更新
+
+    //    compile 'com.sunfusheng:FirUpdater:1.2.0'
+
+    //图片加载框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //图片进行裁剪、模糊、滤镜等处理
+//    compile 'jp.wasabeef:glide-transformations:2.0.0'
+
+    //配合glide的圆角图片
+    compile 'com.github.open-android:Glide-transformations:0.1.0'
+
+    /*SImageView控件图片处理*/
+    compile 'com.szysky.customize:simageview:2.2'
+
+}
